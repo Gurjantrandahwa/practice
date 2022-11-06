@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h1 {
+        color: brown;
+        text-align: center;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Math.floor(Math.random()*array1)]-->
+<script>
+
+
+    // function amIWilson(p) {
+    //     let sqrtNum = Math.floor(Math.sqrt(p));
+    //     let prime = p !== 1;
+    //     for (let i = 2; i < sqrtNum + 1; i++) {
+    //         if (p % i === 0) {
+    //             prime = false;
+    //
+    //         }
+    //     }
+    //
+    //     return prime;
+    // }
+    //     function howManyDays(month) {
+    //         let days;
+    //         switch (month) {
+    //             case 1:
+    //                 days = "31";
+    //                 break;
+    //             case 2:
+    //                 days = "28";
+    //                 break;
+    //             case 3:
+    //                 days = "31";
+    //                 break;
+    //             case 4:
+    //                 days = "30";
+    //                 break;
+    //             case 5:
+    //                 days = "31";
+    //                 break;
+    //             case 6:
+    //                 days = "30";
+    //                 break;
+    //             case 7:
+    //                 days = "31";
+    //                 break;
+    //             case 8:
+    //                 days = "31";
+    //                 break;
+    //             case 9:
+    //                 days = "30";
+    //                 break;
+    //             case 10:
+    //                 days = "31";
+    //                 break;
+    //             case 11:
+    //                 days = "30";
+    //                 break;
+    //             case 12:
+    //                 days = "31";
+    //                 break;
+    //
+    //         }
+    // console.log(days)
+    //         return days;
+    //     }
+    // howManyDays(2)
+    //     function SeriesSum(n) {
+    //         let result = 0;
+    //         let reAverage = 1;
+    //         for (let i = 0; i < n; i += 1) {
+    //             if (i === 0) {
+    //                 result = 1;
+    //             } else {
+    //                 reAverage += 3;
+    //                 result = result + (1 / reAverage);
+    //             }
+    //         }
+    //         return result.toFixed(2);
+    //     }
+    //
+    //     SeriesSum(4)
+    //
+    //     function wordsToMarks(string){
+    //
+    //         let sumOfWords=0
+    //         for (let i = 0; i < string.length; i++) {
+    //            sumOfWords+= parseInt(string[i],36)-9
+    //         }
+    //
+    //         return sumOfWords
+    //     }
+    //
+    //     wordsToMarks("attitude")
+
+    //     function productArray(nums){
+    //         let len = nums.length;
+    //         let left = Array(len + 1);
+    //         let right = Array(len + 1);
+    //         let res = Array(len);
+    //
+    //         left[0] = 1;
+    //         right[0] = 1;
+    //
+    //         for (let i = 0; i < len; i++) {
+    //             left[i + 1] = left[i] * nums[i];
+    //         }
+    //
+    //         for (let j = 0; j < len; j++) {
+    //             right[j + 1] = right[j] * nums[len - 1 - j];
+    //         }
+    //
+    //         for (let k = 0; k < len; k++) {
+    //             res[k] = left[k] * right[len - k - 1];
+    //         }
+    // console.log(res)
+    //         return res;
+    //     }
+    //     productArray([12,20])
+    //     function productArray(numbers)
+    //     {
+    //         var sum = numbers.reduce((x, y) => x * y);
+    //         return numbers.map(x => sum / x);
+    //     }
+    // function points(games) {
+    //     let sum=0;
+    //     for (let i = 0; i < games.length; i++) {
+    //         if (games[i][0] > games[i][2])
+    //             sum += 3;
+    //         if (games[i][0] === games[i][2])
+    //             sum += 1;
+    //     }
+    //     console.log(sum)
+    //     return sum;
+    // }
+    //     points(['1:0','2:0','3:0','4:0','2:1','1:3','1:4','2:3','2:4','3:4'])
+
+
+    // function shadesOfGrey(n) {
+    //     let shades = []
+    //
+    //     for (let i = 1; i <= Math.min(n, 254); i++) {
+    //         const grey = ('0' + i.toString(16)).slice(-2)
+    //         shades.push('#' + grey + grey + grey)
+    //     }
+    //     console.log(shades)
+    //     return shades
+    //
+    // }
+    //
+    // shadesOfGrey(254)
+    // let text = 16;
+    // let result = text.toString().slice(-2);
+    // console.log(result)
+    // document.getElementById("demo").innerHTML = result;
+
+    // function evalObject(value){
+    //     let result = 0;
+    //     switch(value.operation){
+    //         case'+': result = value.a + value.b;
+    //         break;
+    //         case'-': result = value.a - value.b;
+    //             break;
+    //         case'/': result = value.a / value.b;
+    //             break;
+    //         case'*': result = value.a * value.b;
+    //             break;
+    //         case'%': result = value.a % value.b;
+    //             break;
+    //         case'^': result = Math.pow(value.a, value.b);
+    //     }
+    //     console.log(result)
+    //     return result;
+    // }
+    // evalObject({a:1,b:1,operation:'+'})
+
+    // function strCount(str, letter) {
+    //     let count=0
+    //     for (let i = 0; i < str.length; i++) {
+    //       if (str[i] === letter){
+    //           count++
+    //       }
+    //     }
+    //     return count
+    // }
+
+    // console.log(strCount('Hello', 'l'))
+    // function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+    //     let timeToPontoonPeople = pontoonDistance / youSpeed;
+    //     let timeToPontoonShark = sharkDistance / sharkSpeed;
+    //     let timeHalfSharkSpeed = sharkDistance / (sharkSpeed / 2);
+    //     let timeDifferenceWithDolphin = timeHalfSharkSpeed - timeToPontoonPeople;
+    //     let timeDifferenceWithoutDolphin = timeToPontoonShark - timeToPontoonPeople;
+    //
+    //     if (sharkDistance < sharkSpeed) {
+    //         return "Shark Bait!";
+    //     } else if (pontoonDistance < youSpeed) {
+    //         return "Alive!";
+    //     }
+    //
+    //     if (dolphin === true && timeDifferenceWithDolphin > 0) {
+    //         return "Alive!";
+    //     } else if (dolphin === true && timeDifferenceWithDolphin < 0) {
+    //         return "Shark Bait!";
+    //     } else if (dolphin === false && timeDifferenceWithoutDolphin > 0) {
+    //         return "Alive!";
+    //     } else {
+    //         return "Shark Bait!";
+    //     }
+    // }
+    //
+    // console.log(shark(24, 0, 4, 8, true))
+
+    // function feast(beast, dish) {
+    //     let firstLetterBeast = beast.split("")
+    //     console.log(firstLetterBeast)
+    // }
+    //
+    // feast("great blue heron")
+
+    // function getRealFloor(n) {
+    //     for (let i = 1; i < n.length; i++) {
+    //
+    //     }
+    // }
+
+    // function repeatStr (n, s) {
+    //     return s.repeat(n);
+    // }
+
+
+    // Given an array of integers.
+    //
+    //     Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+    //
+    //     If the input is an empty array or is null, return an empty array.
+    //
+    //     Example
+    // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+    //
+    // function SumPositive(input) {
+    //     if (input) {
+    //         let positives = [];
+    //         let countOfPositives = 0;
+    //         let sumNegatives = 0;
+    //
+    //         for (let i = 0; i < input.length; i++) {
+    //             if (input[i] > 0) {
+    //                 positives.push(input[i]);
+    //                 countOfPositives = positives.length
+    //                 console.log(countOfPositives)
+    //
+    //             }
+    //             if (input[i] < 0) {
+    //                 sumNegatives += input[i];
+    //                 console.log(sumNegatives)
+    //             }
+    //         }
+    //         let result = [countOfPositives, sumNegatives]
+    //         console.log(result)
+    //
+    //         return result;
+    //     }
+    //     if (input === null||input.length===0) {
+    //         return []
+    //     }
+    //
+    //
+    // }
+    //
+    // SumPositive([]);
+
+
+    // function dutyFree(normPrice, discount, hol){
+    //     let bottles=0;
+    //
+    //     return bottles=Math.floor(hol/normPrice/discount*100)
+    // }
+    //
+    //
+    // console.log(dutyFree(12, 50, 1000))
+    //
+    // function shorter_reverse_longer(a,b){
+    //     if(a.length>=b.length){
+    //         let split=a.split("");
+    //         let reverse=split.reverse()
+    //         let join=reverse.join("")
+    //         let result=b+join+b
+    //         return result
+    //     }else {
+    //         let bSplit=b.split("");
+    //         let bReverse= bSplit.reverse();
+    //         let bJoin=bReverse.join("")
+    //         let bResult=a+bJoin+a
+    //         return bResult
+    //     }
+    // }
+    //
+    // console.log(shorter_reverse_longer("first", "abc de"))
+
+    // function vowelOne(s) {
+    //     return s.replace(/[^ae iou]/gi, '0').replace(/[^\d]/g, '1');
+    //
+    // }
+    //
+    // console.log(vowelOne("abc e ios"))
+
+
+    // function getSumOfDigits(integer) {
+    //     let sum = 0;
+    //     while (integer) {
+    //         sum += integer %10
+    //         integer = Math.floor(integer / 10)
+    //     }
+    //     return sum
+    // }
+
+    // function validatePIN(pin) {
+    //
+    //     let matches =
+    //     if (pin.length === 4 || pin.length === 6) {
+    //         return true
+    //     } else if (pin.match("a")) {
+    //         return false
+    //     }
+    //
+    // }
+    //
+    // console.log(validatePIN("a234"))
+    // function getMiddle(s) {
+    //     let result="";
+    //     result= s.slice((s.length-1)/2, s.length/2+1)
+    //     console.log(result)
+    //     return result;
+    // }
+    //
+    // getMiddle("test")
+    // const stringToNumber = function (str) {
+    //     let split = str.split(" ")
+    //     let join=split.join("")
+    //
+    //     return parseInt(join);
+    // }
+    // console.log(stringToNumber("1234"))
+    // let isSquare = function (n) {
+    //     let sq = Math.sqrt(n)
+    //     if (sq * sq === n) {
+    //         return "true"
+    //     } else {
+    //         return "false"
+    //     }
+    // }
+    // console.log(isSquare(26))
+    // function disemvowel(str) {
+    //     const noVowels = str.replace(/[aeiou]/gi, '');
+    //     return noVowels
+    // }
+    //
+    // console.log(disemvowel("This website is for losers LOL!"))
+    // function betterThanAverage(classPoints, yourPoints) {
+    //     let classAvg = 0;
+    //     for (let i = 0; i < classPoints.length; i++){
+    //         classAvg += classPoints[i];
+    //
+    //     }
+    //     classAvg = classAvg/classPoints.length;
+    //     return yourPoints > classAvg;
+    //
+    // }
+    //
+    // console.log(betterThanAverage([2, 3], 5))
+    // const binaryArrayToNumber = arr => {
+    //     let result = parseInt(arr.join(''), 2);
+    //     console.log(result)
+    //     return  result
+    // };
+    // console.log(binaryArrayToNumber([1,1,1,1]))
+    // function openOrSenior(data){
+    //     for (let i = 0; i < data.length; i++) {
+    //         if(data[i]>55){
+    //             return "Senior"
+    //         }
+    //         else {
+    //             return "Open"
+    //         }
+    //     }
+    //
+    //         }
+    //         console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]))
+    // function makeNegative(num) {
+    //     if (num < 0) {
+    //         return num;
+    //     } else {
+    //         return -+num
+    //     }
+    //
+    // }
+    //
+    // console.log(makeNegative(-4))
+    // function fakeBin(x) {
+    //     for (let i = 0; i < x.length; i++) {
+    //         if (x < 5) {
+    //             return x.replaceAll(5,0)
+    //         }else {
+    //             return x.replaceAll
+    //         }
+    //     }
+    //
+    // }
+    //
+    //
+    // console.log(fakeBin('45385593107843568'));
+    // function first(arr, n) {
+    //     if(n === undefined) return arr.slice(0, 1);
+    //     if(n ===0) return [];
+    //     let newArr = [];
+    //     if(n <= arr.length){
+    //         for(let i = 0; i < n; i++){
+    //             newArr.push(arr[i])
+    //         } return newArr
+    //     } return arr
+    // }
+
+    function squareSum(numbers) {
+        let square = []
+        if (numbers) {
+            for (let i = 0; i < numbers.length; i++) {
+                square = numbers[i] * numbers[i]
+
+            }
+        } else if (numbers === []) {
+            return 0
+        }
+        return square
+    }
+
+    console.log(squareSum([8, 9]));
+</script>
+<h1>Console</h1>
+</body>
+</html>
