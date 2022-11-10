@@ -7,7 +7,7 @@
     }
 </style>
 <head>
-    <meta charset="UTF-8">
+
     <title>Title</title>
 </head>
 <body>
@@ -679,11 +679,173 @@
     // }
     // console.log(XO("Oo"))
 
-    function findSmallestInt(args) {
+    // function findSmallestInt(args) {
+    //     return Math.min(...args)
+    // }
+    //
+    // console.log(findSmallestInt([78, 56, 232, 12, 8]))
 
+    //     function bmi(weight, height) {
+    //         let  result = weight/Math.pow(height,2)
+    //
+    //         if (result <= 18.5) {
+    //             return "Underweight";
+    //         } else if (result <= 25) {
+    //             return "Normal";
+    //         } else if (result <= 30) {
+    //             return "Overweight";
+    //         } else {
+    //             return "Obese";
+    //         }
+    //
+    //     }
+    //
+    //
+    // console.log(bmi(80, 1.80))
+    // let number = function (array) {
+    //     return array.map(function (line, index) {
+    //         return (index + 1) + ": " + line;
+    //     });
+    // }
+    // console.log(number(["a", "b", "c"]))
+    // function stray(numbers) {
+    //    return  numbers.reduce((result, current) => result ^ current);
+    //     // let filter =numbers.filter((item, i) => numbers.indexOf(item) === i);
+    //     //
+    //     //      return filter.toString()
+    // }
+    // console.log(stray([17, 17, 3, 17, 17, 17, 17]))
+    // function twiceAsOld(dadYearsOld, sonYearsOld) {
+    //
+    //     return Math.abs(dadYearsOld - 2 * sonYearsOld)
+    // }
+    //
+    // console.log(twiceAsOld(22, 1))
+    // Return an array
+    // function fizzbuzz(n) {
+    //     let i = 1, arr = [];
+    //     while (i <= n) {
+    //         let fizz = (i % 3 === 0);
+    //         let buzz = (i % 5 === 0);
+    //         if (fizz || buzz) {
+    //             arr.push((fizz ? "Fizz" : "") + (buzz ? "Buzz" : ""));
+    //         } else {
+    //             arr.push(i);
+    //         }
+    //         i++;
+    //     }
+    //     return arr;
+    // }
+    // function lovefunc(flower1, flower2) {
+    //     let even = flower1 % 2 === 0
+    //     let odd = flower2 % 2 !== 0
+    //     if (even === odd) {
+    //         return true
+    //     } else {
+    //         return false
+    //     }
+    // }
+    // console.log(lovefunc(2,2))
+    // function sortArray(array) {
+    //     const odd = array.filter((x) => x % 2).sort((a,b) => a - b);
+    //     return array.map((x) => x % 2 ? odd.shift() : x);
+    // }
+    //
+    // console.log(sortArray([5, 3, 2, 8, 1, 4]))
+    // function switchItUp(number) {
+    //     let result = "";
+    //         switch (number) {
+    //             case 0:
+    //                 result = "Zero";
+    //                 break
+    //             case 1:
+    //                 result = "One";
+    //                 break
+    //             case 2:
+    //                 result = "Two";
+    //                 break
+    //             case 3:
+    //                 result = "Three";
+    //                 break
+    //             case 4:
+    //                 result="Four";
+    //                 break
+    //             case 5:
+    //                 result="Five";
+    //                 break
+    //             case 6:
+    //                 result="Six";
+    //                 break
+    //             case 7:
+    //                 result="Seven";
+    //                 break
+    //             case 8:
+    //                 result="Eight";
+    //                 break
+    //             case 9:
+    //                 result="Nine";
+    //                 break
+    //
+    //         }
+    //         return result
+    //
+    //
+    // }
+    //
+    // console.log(switchItUp(2))
+    // const invert = array => array.map(num => -num);
+    //
+    // console.log(invert([1, -2, 3, 4, 5]))
+
+    //     function olympicRing(a){
+    //         switch(Math.floor(a.split('').map(e => 'aAbdDegoOpPqQR'.includes(e)? 1 : e==='B'? 2 : 0).reduce((a,b) => a+b)/2)){
+    //             case 0:
+    //             case 1: return "Not even a medal!"
+    //             case 2: return "Bronze!"
+    //             case 3: return "Silver!"
+    //             default: return "Gold!"
+    //         }
+    //     }
+    //
+    //
+    // console.log(olympicRing('eCEHWEPwwnvzMicyaRjk'))
+    // function sumTwoSmallestNumbers(numbers) {
+    //     let res = numbers.sort((a, b) => a - b).slice(0, 2);
+    //     console.log(res)
+    //     let sum = res.reduce((add, num) => add + num, 0)
+    //     return sum
+    //
+    // }
+    //
+    // console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]))
+    // function longest(s1, s2) {
+    //     return Array.from(new Set(s1 + s2)).sort().join('');
+    //
+    // }
+    // console.log(longest("aretheyhere", "yestheyarehere"))
+    // function feast(beast, dish) {
+    //    return  beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+    // }
+    //
+    // console.log(feast("brown bear", "bear claw"))
+    // function getDivisorsCnt(n) {
+    //     let answer = 0;
+    //     for (let i = 1; i <= n; i++) {
+    //         answer += n % i === 0
+    //     }
+    //     return answer
+    //
+    // }
+    //
+    // console.log(getDivisorsCnt(50000))
+
+    function descendingOrder(n) {
+        let reduce = n.sort((a, b) => a + b)
+        console.log(reduce)
+        return ''
     }
 
-    console.log(findSmallestInt([78, 56, 232, 12, 8]))
+    console.log(descendingOrder(123456789))
 </script>
 <h1>Console</h1>
 </body>
