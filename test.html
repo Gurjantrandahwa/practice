@@ -838,14 +838,104 @@
     // }
     //
     // console.log(getDivisorsCnt(50000))
+    //
+    // function descendingOrder(n) {
+    //     let myArr = String(n).split("").map((num) => {
+    //         return Number(num)
+    //     })
+    //
+    //     let sort = myArr.sort()
+    //     let answer = sort.reverse()
+    //     let string = answer.toString()
+    //     let withoutCommas = string.replace(/,/g, '')
+    //     return Number(withoutCommas)
+    // }
+    //
+    // console.log(descendingOrder(1021))
+    // function removeSmallest(numbers) {
+    //
+    //     let indexOfMin = numbers.indexOf(Math.min(...numbers));
+    //     return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+    //     // numbers.filter((n,i) => i !== numbers.indexOf(Math.min(...numbers)));
+    // }
+    //
+    // console.log(removeSmallest([2,2,1,2,1]))
+    // function isPerfect(n) {
+    //     let result = 1
+    //     for (let i = 2; i <= n ** .5; i++) {
+    //         if (n % i === 0) {
+    //             result += i + n / i
+    //         }
+    //     }
+    //     return result ===n && n > 1
+    // }
+    // console.log(isPerfect(28))
+    // function testEven(n) {
+    //     let answer=n%2===0
+    //   return answer
+    // }
+    // console.log(testEven(0))
+    // function positiveSum(arr) {
+    //     if (arr){
+    //         let filter = arr.filter(n => n > 0)
+    //         console.log(filter)
+    //         return filter.reduce((add, sum) => add + sum, 0)
+    //     }else {
+    //         return 0
+    //     }
+    // }
+    //
+    // console.log(positiveSum([1, -2, 3, 4, 5]))
+    // function sortByLength (array) {
+    //     let l=0
+    //     for (let i = 0; i < array.length; i++) {
+    //          l=array.sort((a,b) => a.length - b.length);
+    //     }
+    //     return array
+    //
+    // }
+    // console.log(sortByLength(["Beg", "Life", "I", "To"]))
+    // function strong(n) {
+    //     let  digits = (""+n).split("");
+    //     let f = num=> num<2? 1: f(num-1)*num
+    //     let sum= 0
+    //
+    //     for (let i=0; i<digits.length; i++){
+    //         sum += f(digits[i])
+    //     }
+    //     return (sum===n? "STRONG!!!!" : "Not Strong !!") ;
+    // }
+    // console.log(strong(145))
+    // function sumEvenNumbers(input) {
+    //     let sum = input.filter((n) => n % 2 === 0)
+    //     let answer = sum.reduce((add, sum) => add + sum, 0)
+    //     return answer
+    // }
+    //
+    // console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
-    function descendingOrder(n) {
-        let reduce = n.sort((a, b) => a + b)
-        console.log(reduce)
-        return ''
+    //     function count (string) {
+    //         let count = {};
+    //         string.split('').forEach(function(s) {
+    //             count[s] ? count[s]++ : count[s] = 1;
+    //         });
+    //         return count;
+    //     }
+    //
+    //
+    // console.log(count("aba"))
+    // function geometricSequenceElements(a, r, n) {
+    //     let res = [a];
+    //     for (let i = 0; i < n - 1; i++) {
+    //         res.push(res[i]*r);
+    //     }
+    //     return res.join(', ');
+    //
+    // }
+    // console.log(geometricSequenceElements(2, 3, 5))
+    function largest(n,xs){
+
     }
-
-    console.log(descendingOrder(123456789))
 </script>
 <h1>Console</h1>
 </body>
