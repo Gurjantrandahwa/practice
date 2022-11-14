@@ -933,9 +933,98 @@
     //
     // }
     // console.log(geometricSequenceElements(2, 3, 5))
-    function largest(n,xs){
+    // function largest(n, xs) {
+    //     return xs.sort(function (a, b) {
+    //         return a - b;
+    //     }).slice(xs.length - n);
+    // }
+    //
+    // console.log(largest(8, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+    // function sayHello(name) {
+    //     return 'Hello,'+" " + name
+    // }
+    // function solution(str, ending) {
+    //     return str.endsWith(ending)
+    //     // return str.substr(-ending.length) == ending;
+    // }
+    //
+    // console.log(solution('abcde', 'cde'))
+    // function checkForFactor(base, factor) {
+    //     if (base % factor === 0) {
+    //         return true
+    //     } else {
+    //         return false
+    //     }
+    // }
+    // console.log(checkForFactor(9,2))
+    // function maps(x) {
+    //
+    //     return x.map(value => {
+    //         return value*2
+    //     })
+    // }
+    // console.log(maps([1, 2, 3]))
+    // function sumStr(a, b) {
+    //     return String(Number(a)+Number(b));
+    // }
+    //
+    // console.log(sumStr("34", "5"))
+    // function finalGrade(exam, projects) {
+    //     if (exam > 90 || projects > 10) {
+    //         return 100
+    //     }
+    //     if (exam > 75||projects>=5) {
+    //         return 90
+    //     }
+    //     if (exam>50||projects>=2){
+    //         return 75
+    //     }else {
+    //         return  0
+    //     }
+    // }
+    //
+    // console.log(finalGrade(85, 5))
+    // function removeExclamationMarks(s) {
+    //     return s.replace(/!/g,"");
+    // }
+    // console.log(removeExclamationMarks("Hello World!"))
+    // function stringToArray(string){
+    //     return string.split(" ")
+    // }
+    // function booleanToString(b) {
+    //     if (b === true) {
+    //         return "true"
+    //     }else{
+    //         return "false"
+    //     }
+    // }
+    // console.log(booleanToString(true))
+    // function move(position, roll) {
+    //     return position + 2 * roll
+    // }
+    // console.log(move(0, 4))
+    // function grow(x) {
+    //     let answer = x.reduce((add, sum) => add * sum)
+    //     return answer
+    // }
+    // console.log(grow([4, 1, 1, 1, 4]))
+    // function otherAngle(a, b) {
+    //     let c = a + b - 180
+    //
+    //     return Math.abs(c);
+    // }
+    //
+    // console.log(otherAngle(60, 60))
+    // const areaOrPerimeter = function (l, w) {
+    //   return   l === w ? l*w : 2*(l + w)
+    // };
+    // console.log(areaOrPerimeter(3, 3))
+    function isTriangle(a, b, c) {
+        return a + b > c && a + c > b && c + b > a;
 
     }
+
+    console.log(isTriangle(7, 2, 2))
 </script>
 <h1>Console</h1>
 </body>
