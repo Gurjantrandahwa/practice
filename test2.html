@@ -117,6 +117,51 @@
     //
     // }
     // console.log(domainName("https://google.com"))
+    // function zero(fn) {return fn ? fn(0) : 0}
+    // function one(fn) {return fn ? fn(1) : 1}
+    // function two(fn) {return fn ? fn(2) : 2}
+    // function three(fn) {return fn ? fn(3) : 3}
+    // function four(fn) {return fn ? fn(4) : 4}
+    // function five(fn) {return fn ? fn(5) : 5}
+    // function six(fn) {return fn ? fn(6) : 6}
+    // function seven(fn) {return fn ? fn(7) : 7}
+    // function eight(fn) {return fn ? fn(8) : 8}
+    // function nine(fn) {return fn ? fn(9) : 9}
+    //
+    // function plus(n) {return function(v) {return v + n}}
+    // function minus(n) {return function(v) {return v - n}}
+    // function times(n) {return function(v) {return v * n}}
+    // function dividedBy(n) {return function(v) {return v / n}}
+//     function hello(name) {
+// let s=name
+//
+//         return  `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`;
+//     }
+//     console.log(hello('alice'))
+//     function isLeapYear(year) {
+//         if (year%4===0){
+//             return true
+//         }
+//         else {
+//             return  false
+//         }
+//     }
+//     console.log(isLeapYear(1234))
+//
+//     function reverse(string){
+//      string=   string.split(" ")
+//         string=string.reverse()
+//         return string.join(" ")
+//     }
+//     console.log(reverse('This is so easy'))
+
+    function minMax(arr){
+   let min =Math.min(...arr)
+        console.log(min)
+        let max=Math.max(...arr)
+        return[min,max]
+    }
+    console.log(minMax([1, 2, 3, 4, 5]))
 </script>
 <body>
 
