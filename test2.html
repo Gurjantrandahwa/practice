@@ -132,36 +132,83 @@
     // function minus(n) {return function(v) {return v - n}}
     // function times(n) {return function(v) {return v * n}}
     // function dividedBy(n) {return function(v) {return v / n}}
-//     function hello(name) {
-// let s=name
-//
-//         return  `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`;
-//     }
-//     console.log(hello('alice'))
-//     function isLeapYear(year) {
-//         if (year%4===0){
-//             return true
-//         }
-//         else {
-//             return  false
-//         }
-//     }
-//     console.log(isLeapYear(1234))
-//
-//     function reverse(string){
-//      string=   string.split(" ")
-//         string=string.reverse()
-//         return string.join(" ")
-//     }
-//     console.log(reverse('This is so easy'))
-
-    function minMax(arr){
-   let min =Math.min(...arr)
-        console.log(min)
-        let max=Math.max(...arr)
-        return[min,max]
+    //     function hello(name) {
+    // let s=name
+    //
+    //         return  `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`;
+    //     }
+    //     console.log(hello('alice'))
+    //     function isLeapYear(year) {
+    //         if (year%4===0){
+    //             return true
+    //         }
+    //         else {
+    //             return  false
+    //         }
+    //     }
+    //     console.log(isLeapYear(1234))
+    //
+    //     function reverse(string){
+    //      string=   string.split(" ")
+    //         string=string.reverse()
+    //         return string.join(" ")
+    //     }
+    //     console.log(reverse('This is so easy'))
+    //
+    // function minMax(arr) {
+    //     let min = Math.min(...arr)
+    //     console.log(min)
+    //     let max = Math.max(...arr)
+    //     return [min, max]
+    // }
+    //
+    // console.log(minMax([1, 2, 3, 4, 5]))
+    // function createPhoneNumber(numbers) {
+    //     let format = "(xxx) xxx-xxxx";
+    //
+    //     for (let i = 0; i < numbers.length; i++) {
+    //         format = format.replace('x', numbers[i]);
+    //     }
+    //
+    //     return format;
+    // }
+    //
+    // console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
+    //     function chromosomeCheck(sperm) {
+    // if (sperm==="XX"){
+    //     return "Congratulations! You're going to have a daughter."
+    // }
+    // else {
+    //     return "Congratulations! You're going to have a son."
+    // }
+    //     }
+    // function replace(s) {
+    //     let vowels = s.replace(/[aeiou]/gi, '!')
+    //     console.log(vowels)
+    //     return vowels
+    // }
+    //
+    // console.log(replace("!Hi! Hi!"))
+    // function findDifference(a, b) {
+    //     let sumA = a.reduce((add, sum) => add * sum)
+    //
+    //     let sumB=b.reduce((add, sum) => add * sum)
+    //
+    //     return Math.abs(sumA-sumB)
+    // }
+    //
+    // console.log(findDifference([2, 2, 3], [5, 4, 1]))
+    // function rowWeights(array) {
+    //     let t1 = array.filter((x, i) => i % 2 === 0).reduce((a, item) => a + item, 0);
+    //     let t2 = array.filter((x, i) => i % 2 !==0).reduce((a, item) => a + item, 0);
+    //
+    //     return [t1, t2]
+    // }
+    // console.log(rowWeights([100,50]))
+    const uniqueInOrder=function(iterable){
+        return [...iterable].filter((a, i) => a !== iterable[i-1])
     }
-    console.log(minMax([1, 2, 3, 4, 5]))
+    console.log(uniqueInOrder('AAAABBBCCDAABBB'))
 </script>
 <body>
 
