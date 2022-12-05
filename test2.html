@@ -205,10 +205,52 @@
     //     return [t1, t2]
     // }
     // console.log(rowWeights([100,50]))
-    const uniqueInOrder=function(iterable){
-        return [...iterable].filter((a, i) => a !== iterable[i-1])
-    }
-    console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+    // const uniqueInOrder=function(iterable){
+    //     return [...iterable].filter((a, i) => a !== iterable[i-1])
+    // }
+    // console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+    // 2*(l*w + l*h + w*h).
+    // function getSize(width, height, depth) {
+    //     let V = width * height * depth
+    //     let area = 2 * (height * width + height * depth + width * depth)
+    //
+    //     return [area,V]
+    // }
+    //
+    // console.log(getSize(4, 2, 6))
+    // function binToDec(bin){
+    //    return parseInt(bin,2)
+    // }
+    // function sumOfMinimums(arr) {
+    // let minA=Math.min(...arr[0])
+    // let minB=Math.min(...arr[1])
+    // let minC=Math.min(...arr[2])
+    //     // let minD=Math.min(...arr[3])
+    //     return minA+minB+minC
+    //
+    // }
+    //
+    // console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
+    // function sumDigits(number) {
+    //
+    //     let sum = Math.abs(number)
+    //         .toString()
+    //         .split('')
+    //         .map(Number)
+    //         .reduce(function (a, b) {
+    //             return a + b;
+    //         }, 0);
+    //
+    //     return sum
+    // }
+    //
+    // console.log(sumDigits(-32))
+
+    // function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+    //  return    enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
+    // }
+    // console.log(checkCoupon('123','123','September 5, 2014','October 1, 2014'))
+
 </script>
 <body>
 
