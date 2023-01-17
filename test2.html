@@ -121,7 +121,7 @@
     // function one(fn) {return fn ? fn(1) : 1}
     // function two(fn) {return fn ? fn(2) : 2}
     // function three(fn) {return fn ? fn(3) : 3}
-    // function four(fn) {return fn ? fn(4) : 4}
+    // function four(fn) {ret   urn fn ? fn(4) : 4}
     // function five(fn) {return fn ? fn(5) : 5}
     // function six(fn) {return fn ? fn(6) : 6}
     // function seven(fn) {return fn ? fn(7) : 7}
@@ -250,6 +250,177 @@
     //  return    enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
     // }
     // console.log(checkCoupon('123','123','September 5, 2014','October 1, 2014'))
+    // function lastSurvivor(letters, coords) {
+    //     letters = letters.split('');
+    //     for (let i = 0; i < coords.length; i++) {
+    //         letters.splice(coords[i], 1)
+    //     }
+    //     return letters.join('')
+    // }
+    //
+    // console.log(lastSurvivor('kbc', [0, 1]), 'b')
+    // function howManyLightsabersDoYouOwn(name) {
+    //     if (name === "Zach") {
+    //         return 18
+    //     } else {
+    //         return 0
+    //     }
+    // }
+    //
+    // console.log(howManyLightsabersDoYouOwn("Zach"))
+    // function take(arr, n) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         arr=arr.slice(n[i],n)
+    //     }
+    //     return arr
+    // }
+    // console.log(take([0, 1, 2, 3, 5, 8, 13], 3))
+    // function high(x){
+    //     return x.split(' ').reduce((accum, current)=>{
+    //         return score(current) > score(accum)? current:accum;
+    //     })
+    // }
+    //
+    // function score(word){
+    //     return word.split('').reduce((accum,current)=>{return accum+(current.charCodeAt()-96)},0)
+    // }
+    // function apple(x) {
+    //     if (x * x > 1000) {
+    //         return "It's hotter than the sun!!"
+    //     } else {
+    //         return "Help yourself to a honeycomb Yorkie for the glovebox."
+    //     }
+    // }
+    //
+    // console.log(apple("50"))
+
+    // function sayHello(name, city, state) {
+    //
+    //     console.log(name)
+    //     return `Hello,${name.join(" ")}! Welcome to ${city}, ${state}!`
+    // }
+    //
+    // console.log(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'))
+    // function multipleOfIndex(array) {
+    //
+    // }
+    // console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]))
+    // !--        function evenOrOdd(number) {-->
+    //<!--            if (number % 2 === 0) {-->
+    //<!--                return "Even"-->
+    //<!--            }else {-->
+    //<!--                return "Odd"-->
+    //<!--            }-->
+    //<!--        }--
+    //     function testit(a, b) {
+    // return a|b
+    //
+    //     }
+    //
+    //     console.log(testit(0, 2), "")
+    // function whatday(num) {
+    //     switch (num) {
+    //         case 1:
+    //             num = 1;
+    //             return "Sunday";
+    //             break;
+    //         case 2:
+    //             num = 2;
+    //             return "Monday";
+    //             break;
+    //         case 3:
+    //             num = 3;
+    //             return "Tuesday";
+    //             break;
+    //         case 4:
+    //             num = 4;
+    //             return "Wednesday";
+    //             break;
+    //         case 5:
+    //             num = 5;
+    //             return "Thursday";
+    //             break;
+    //         case 6:
+    //             num =6;
+    //             return "Friday";
+    //             break;
+    //             case 7:
+    //             num = 7;
+    //             return "Saturday";
+    //             break;
+    //
+    //
+    //     }
+    //     return 'Wrong, please enter a number between 1 and 7'
+    // }
+    // console.log(whatday(7))
+    // function largestPairSum(numbers) {
+    //
+    //     numbers.sort(function (a, b) {
+    //         return a - b;
+    //     })
+    //     console.log(numbers)
+    //     numbers.reverse()
+    //     return numbers[0]+numbers[1]
+    // }
+    //
+    // console.log(largestPairSum([10, 14, 2, 23, 19]))
+    // function getLength(arr){
+    //     return arr.length
+    // }
+    // function getFirst(arr){
+    //     return arr[0]
+    // }
+    // function getLast(arr){
+    //
+    //     return arr[arr.length-1]
+    // }
+    // function pushElement(arr){
+    //     var el=1;
+    //     let push=arr.push(el)
+    //     return push
+    // }
+    // console.log(pushElement([1,2,3]),"pushwe")
+    // function popElement(arr){
+    //     //pop an element from arr
+    //
+    //     return arr.pop()
+    //
+    // }
+    // console.log(popElement([1,2,3]),"pop")
+    // let gfg="GeeksforGeeks";
+    // console.log(gfg.indexOf("G"))
+    // for (let i = 1; i >= 30; i++) {
+    //     let data = i * 5
+    //     console.log(data)
+    // }
+
+
+    //    function     reverseWord(){
+    //             //Your code here
+    //        let str="Geeks";
+    //             return str.split("").reverse().join("")
+    //         }
+    // console.log(reverseWord())
+    //
+    // function getMinMax(arr, n) {
+    //     let res =[arr[0],arr[0]];
+    //
+    //     for (let index = 0; index < n; index++) {
+    //
+    //         // For checking minimum :
+    //         if (arr[index] < res[0]) {
+    //             res[0] = arr[index];
+    //         }
+    //
+    //         // For checking maximum :
+    //         if(arr[index] > res[1]){
+    //             res[1] = arr[index];
+    //         }
+    //     }
+    //     return res;
+    // }
+
 
 </script>
 <body>
