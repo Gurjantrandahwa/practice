@@ -126,28 +126,28 @@
     // let friends = ["ron", "mark", "john", "harry", "potter"];
     // console.log(friends.lastIndexOf("potter",65))
 
-//    includes()
-//     let friends = ["ron", "mark", "john", "harry", "potter"];
-//     console.log(friends.includes("harry",0))
+    //    includes()
+    //     let friends = ["ron", "mark", "john", "harry", "potter"];
+    //     console.log(friends.includes("harry",0))
 
-//    find()
-//     const prices=[200,300,400,500,600,700];
+    //    find()
+    //     const prices=[200,300,400,500,600,700];
 
     // price<400
-// const findElem=prices.find((currVal,index)=>{
-//     return currVal<400
-// })
-//     console.log(findElem)
+    // const findElem=prices.find((currVal,index)=>{
+    //     return currVal<400
+    // })
+    //     console.log(findElem)
 
-//    findIndex()
-//     const prices=[200,300,400,500,600,700];
-//     const findElem=prices.findIndex((currVal,index)=>{
-//         return currVal<400
-//
-//     })
-//         console.log(findElem)
+    //    findIndex()
+    //     const prices=[200,300,400,500,600,700];
+    //     const findElem=prices.findIndex((currVal,index)=>{
+    //         return currVal<400
+    //
+    //     })
+    //         console.log(findElem)
 
-//    filter()
+    //    filter()
 
     // const prices=[200,300,400,500,600,700];
     // const findElem=prices.filter((currVal,index)=>{
@@ -160,10 +160,133 @@
     // alphabets
     // const months= ["march","Jan","Feb","Dec","Nov"]
     // console.log(months.sort())
-//    numbers
-//     const numbers=[1,30,4,21,1000,0,5]
-//
-//     console.log(numbers.sort())
+    //    numbers
+    //     const numbers=[1,30,4,21,1000,0,5]
+    //
+    //     console.log(numbers.sort())
+
+
+    //push()  # add at the end
+    // const animals = ["pigs", "goats", "sheep"]
+    // const count = animals.push("chicken", "cows", "cats")
+    // console.log(animals)
+    //
+    // //length of the array in push method
+    // console.log(count)
+
+    //    unshift()  # beginning at the end
+
+    // const animals = ["pigs", "goats", "sheep"]
+    // const count = animals.unshift("chicken", "cows", "cats")
+    // console.log(animals)
+    //
+    //length of the array in unshift method
+    // console.log(count)
+
+    //    unshift() with numbers
+    //     const numbers=[1,2,5,6]
+    //     numbers.unshift(4,6)
+    //     console.log(numbers)
+
+    // pop() method remove at the end
+    // const plants = ["kale", "tomato", "cauliflower", "broccoli"]
+    // console.log(plants)
+    // console.log(plants.pop())
+    //
+    // console.log(plants)
+
+    //    shift() remove first element
+    //     const plants = ["kale", "tomato", "cauliflower", "broccoli"]
+    //     console.log(plants)
+    //     console.log(plants.shift())
+    //
+    //     console.log(plants)
+
+    //    Using splice() method
+
+    // const months = ['Jan', 'march', 'April', 'June', 'July'];
+    //    1. add Dec at the end of an array ?
+    //    2. What is the return value of the splice method ?
+    //    3. update march to March (update) ?
+    //    4. Delete June from an array ?
+
+    //  sol:1
+    //     const newMonth= months.splice(months.length,0,"Dec")
+    //     console.log(months)
+
+    //  sol:2
+    // const newMonth = months.splice(months.length, 0, "Dec")
+    // console.log(newMonth)
+    //    return empty array if there is any remove element then return the removed element
+
+    //  sol:3
+
+    // const months = ['Jan', 'march', 'April', 'June', 'July'];
+    // const indexOfMonth = months.indexOf('march');
+    // if (indexOfMonth !== -1) {
+    //     const updatedMonth = months.splice(indexOfMonth, 1, "March")
+    //     console.log(months)
+    // } else {
+    //     console.log("No data found")
+    // }
+
+    //  sol:4
+    // const months = ['Jan', 'march', 'April', 'June', 'July'];
+    // const indexOfMonth = months.indexOf('June');
+    // if (indexOfMonth !== -1) {
+    //     const updatedMonth = months.splice(indexOfMonth, 1)
+    //     console.log(months)
+    // } else {
+    //     console.log("No data found")
+    // }
+    // const months = ['Jan', 'march', 'April', 'June', 'July'];
+    // const indexOfMonth = months.indexOf('April');
+    // if (indexOfMonth !== -1) {
+    //     const updatedMonth = months.splice(indexOfMonth, Infinity)
+    //     console.log(months)
+    // } else {
+    //     console.log("No data found")
+    // }
+
+    // map()
+    // const array1 =[1,4,9,16,25]
+    // num >9
+    //  let newArr = array1.map((value,index)=>{
+    //      return value>9
+    //  })
+    // console.log(newArr)
+    // console.log(array1)
+    // const array1 =[1,4,9,16,25]
+    // let newArr = array1.map((value,index)=>{
+    //     return `Index no. = ${index} and the value is ${value} belong to ${array1}`
+    // })
+    // console.log(newArr)
+    // It return new array without mutating the original array
+
+
+    // Challenge of map method
+    // 1: Find the square root of each element in an array ?
+    // let arr = [25, 36, 49, 64, 81];
+    //
+    // let arrSquare = arr.map((value) => {
+    //     return Math.sqrt(value)
+    // })
+    // console.log(arrSquare)
+
+    // 2: Multiply each element by 2 and return only those
+    //    elements which are greater than 10 ?
+    // let arr = [2, 3, 4, 6, 8];
+    // let newArr = arr.map((value) => {
+    //     return value * 2
+    // }).filter((value) => {
+    //     return value > 10
+    // })
+    // console.log(newArr)
+    //    we use chaining too
+
+//    reduce() method
+
+
 </script>
 </body>
 </html>
