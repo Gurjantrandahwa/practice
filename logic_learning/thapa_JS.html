@@ -291,22 +291,97 @@
     // },8)
     // console.log(sum)
 
-//    how to flatten 2D array in one single array
+    //    how to flatten 2D array in one single array
 
-//     let arr =[
-//         ['zone_1','zone_2'],
-//         ['zone_3','zone_4'],
-//         ['zone_5','zone_6'],
-//         ['zone_7','zone_8'],
-//     ]
-// let flatArr = arr.reduce((accum,currValue)=>{
-//     return accum.concat(currValue)
-// })
-//     console.log( flatArr)
-//     console.log(arr)
+    //     let arr =[
+    //         ['zone_1','zone_2'],
+    //         ['zone_3','zone_4'],
+    //         ['zone_5','zone_6'],
+    //         ['zone_7','zone_8'],
+    //     ]
+    // let flatArr = arr.reduce((accum,currValue)=>{
+    //     return accum.concat(currValue)
+    // })
+    //     console.log( flatArr)
+    //     console.log(arr)
 
+    // Strings
+
+    // search method
+    //     const myBioData='I am the thapa Technical'
+    //     let sData=myBioData.search("thapa")
+    // console.log(sData)
+
+    //    Extracting String parts
+
+    //    slice Method
+    //   1.  the slice does not count the last index of the element means it does not include the 4
+    //    in this example it counts only "Appl" not e
+
+    // let  str= "Apple, Banana, Kiwi"
+    // let slice= str.slice(0,4)
+    // console.log(slice)
+
+    //    2. if we pass the negative value it goes to the end and removes last two because we pass -2
+    //    as an argument
+
+    // let  str= "Apple, Banana, Kiwi,mango"
+    // let slice= str.slice(7,-2)
+    // console.log(slice)
+    // 3. if we does not pass end argument then it goes to the end
+
+    // let  str= "Apple, Banana, Kiwi,mango"
+    // let slice= str.slice(7)
+    // console.log(slice)
+
+    //     Other useful methods
+
+    //    challenge Time
+    //    Display only 280 characters of a string like one used in twitter
+
+    // let text = "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design."
+    // let myTweet = text.slice(0, 280)
+    // console.log(myTweet + "...")
+
+    //    The substring method
+    // same as slice but not accept -ve indexes
+    //    1.
+    //     let  str= "Apple, Banana, Kiwi,mango"
+    //     let res= str.substring(0,4)
+    //     console.log(res)
+
+    //    2.
+    //     let  str= "Apple, Banana, Kiwi"
+    //     let res= str.substring(7,-2)
+    //     console.log(res)
+
+
+    // substr() method
+    // 1.
+    // let  str= "Apple, Banana, Kiwi"
+    // let res= str.substr(0,4)
+    // console.log(res)
+
+    // cannot add -ve value if you add -ve value then you receive nothing
+    // let str = "Apple, Banana, Kiwi"
+    // let res = str.substr(7, -2)
+
+    // 2. extract data from backwards
+    // let res= str.substr(-4)
+    // console.log(res)
+
+    //    Replacing String Content ()
+
+    // replace() method
+    // 1.
+
+    // let myBioData = 'I am the vinod bahadur thapa vinod'
+    // let replace = myBioData.replace("vinod", "Techni")
+    // console.log(replace)
 
 
 </script>
+
+
 </body>
 </html>
