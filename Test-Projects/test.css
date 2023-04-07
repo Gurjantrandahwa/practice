@@ -17,10 +17,10 @@ body {
     color: #318000;
 }
 
-.html {
+.skills-btn button{
     color: #0e820e;
-    background: #0a470a
-}
+    /*background: #0a470a;*/
+    background:aliceblue ;}
 
 .editor-wrapper {
     width: 90%;
