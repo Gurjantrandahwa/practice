@@ -3,152 +3,98 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>List</title>
-    <style>
-        body {
-            background: #23164d;
-            color: white;
-            font-family: Arial, "sans-serif";
-        }
-
-        .topNav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 8px 100px;
-            border-bottom: 1px solid gray;
-
-        }
-
-        .topNav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-
-        }
-
-        .topNav li, a {
-            color: white;
-            text-decoration: none;
-            text-transform: capitalize;
-            font-weight: 500;
-        }
-
-        .profile-wrapper {
-            display: flex;
-            padding-top: 10px;
-            margin-left: 20px;
-            justify-content: space-between;
-            margin-right: 100px;
-        }
-
-        .profile {
-            display: flex;
-            align-items: center;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .hi {
-            color: gray;
-        }
-
-        .profession {
-            color: gray;
-            font-weight: 600;
-        }
-
-        .resume-btn {
-            color: aqua;
-            background: transparent;
-            border: 1px solid aqua;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .profile2{
-            display: flex;
-            padding-top: 20px;
-            margin-left: 20px;
-            justify-content: space-evenly;
-
-
-
-        }
-         .img{
-            width: 250px;
-            height: 300px;
-            object-fit: cover;
-             border-radius: 10px;
-             margin-top: 80px;
-        }
-         .hire-btn{
-             color: black;
-             background:skyblue ;
-             border: 1px solid ;
-             padding: 10px 20px;
-             border-radius: 4px;
-             cursor: pointer;
-         }
-.about-text{
-    margin-left: 50px;
-}
-
-    </style>
+    <link rel="stylesheet" href="test.css">
 
 </head>
 <body>
-<nav class="topNav">
-    <h2>Name</h2>
-    <ul>
-        <li><a href="">home</a></li>
-        <li><a href="">about me</a></li>
-        <li><a href="">services</a></li>
-        <li><a href="">skills</a></li>
-        <li><a href="">project</a></li>
-    </ul>
+<div class="first-container">
+    <nav class="topNav">
+        <h2>Name</h2>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about me</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">skills</a></li>
+            <li><a href="">project</a></li>
+        </ul>
 
 
-</nav>
+    </nav>
 
-<div class="profile-wrapper">
-    <div>
+    <div class="profile-wrapper">
         <div>
-            <p class="hi">Hi, I'm</p>
-            <h1>Ramandeep <span style="color: skyblue">Kaur</span></h1>
-            <p class="profession">Fronted Web Developer</p>
+            <div>
+                <p class="hi">Hi, I'm</p>
+                <h1>Ramandeep <span style="color: skyblue">Kaur</span></h1>
+                <p class="profession">Fronted Web Developer</p>
+            </div>
+            <div>
+                <button class="resume-btn">Resume</button>
+                <button class="hire-btn">Let's Talk</button>
+            </div>
+        </div>
+        <img class="profile" src="/images/sapce.jpg" alt="space">
+
+    </div>
+    <div class="profile2">
+        <div>
+            <img class="img" src="/images/sapce.jpg" alt="space">
+
         </div>
         <div>
-            <button class="resume-btn">Resume</button>
-            <button class="hire-btn">Let's Talk</button>
+            <h2>About me</h2>
+            <div class="about-text">
+                <p> Raju Sheorn </p>
+                <p>
+                    A self tought Fronted Web Developer BCA student looking for an opportunity in<br>
+                    Web Development.<br>
+                    Who is committed to study web development Mindset to fulfill the life with<br>
+                    wonderful memories and knowledge.
+                </p>
+                <button class="hire-btn">Hire Me</button>
+            </div>
+
         </div>
-    </div>
-    <img class="profile" src="/images/sapce.jpg" alt="space">
-
-</div>
-<div class="profile2">
-    <div>
-        <img class="img" src="/images/sapce.jpg" alt="space">
-
-    </div>
-    <div>
-    <h2>About me</h2>
-        <div class="about-text">
-            <p> Raju Sheorn </p>
-            <p>
-                A self tought Fronted Web Developer BCA student looking for an opportunity in<br>
-                Web Development.<br>
-                Who is committed to study web development Mindset to fulfill the life with<br>
-                wonderful memories and knowledge.
-            </p>
-            <button class="hire-btn">Hire Me</button>
-        </div>
-
     </div>
 </div>
 
+<!--Second project-->
+<div class="editor-wrapper">
 
+        <button class="html">Free</button>
+
+    <div class="container">
+        <h1> Online Code Editor( JQuery)
+        </h1>
+        <p> Beginner</p>
+        <p> 20 hours</p>
+        <p> skills </p>
+    </div>
+    <div>
+        <button class="html">HTML</button>
+        <button class="html">CSS</button>
+        <button class="html">JQuery</button>
+        <button class="html">Web development</button>
+        <button class="html">Website hosting</button>
+    </div>
+</div>
+
+<div class="circle-wrapper">
+    <div class="circle">
+        <p> Create the
+            structural aspect
+            of a code editor
+            using HTML, CSS.
+        </p>
+
+
+    </div>
+    <div class="circle">
+        <p> Implementation of core functionalities and other small features using JQuery .</p>
+    </div>
+    <div class="circle">
+        <p> Publish to GitHub and host your deployed code editor.</p>
+    </div>
 </div>
 
 </body>
