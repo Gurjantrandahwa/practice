@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, "sans-serif";
+}
+
+
+.container {
+    color: #318000;
+
+}
+
+.btn1 {
+    color: lawngreen;
+    background: #800066 !important;
+}
+
+.btn1 button {
+    background: transparent;
+}
+
+.skills-btn button {
+    color: rgba(122, 235, 122, 0.67);
+    /*background: #0a470a;*/
+    background: #061806;
+
+}
+
+.editor-wrapper {
+    width: 90%;
+    height: 300px;
+    background: #0a270a;
+    border: none;
+    color: lime;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 20px;
+
+
+}
+
+.editor-wrapper button {
+    border: 2px solid #076f07;
+    padding: 5px 10px;
+    color: #076f07;
+    border-radius: 4px;
+}
+
+.circle {
+    background: #0a470a;
+    color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.circle-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px auto;
+
+}
+
+.project {
+    background: #0a270a;
+
+}
+
+.project button {
+
+    background: #5b5be6;
+
+
+}
+
