@@ -1,0 +1,89 @@
+body {
+    background: rgba(0, 0, 0, 0.9);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-container {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.box-container h1 {
+    font-size: 44px;
+    padding: 10px;
+}
+
+.description {
+    color: ghostwhite !important;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.button-wrapper {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.button-wrapper button {
+    background: transparent;
+    border: 1px solid lime;
+    padding: 8px 24px;
+    color: lime;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.search-input {
+    padding: 14px 8px;
+    width: 70%;
+    color: black;
+    border-radius: 16px;
+    outline: none;
+}
+
+.checkbox-wrapper {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkbox-wrapper label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.search-btn {
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.search-btn button {
+    background: lime;
+    border: 2px solid;
+    width: 80%;
+    padding: 8px 20px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: #0f0e0e;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 20px;
+}
