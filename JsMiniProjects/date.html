@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display a date</title>
+</head>
+<body>
+<p>Click on the button to display after changing hours</p>
+
+<button onclick="myFunction()">
+    Click me
+</button>
+
+<p id="demo"></p>
+<script>
+    // function myFunction() {
+    //     let t = new Date()
+    //     t.setHours(6)
+    //     document.getElementById("demo").innerHTML = t;
+    // }
+(    function () {
+        setInterval(()=>{
+            let d=new Date().toLocaleTimeString();
+            document.getElementById("demo").innerHTML = d;
+        },1000)
+    })();
+</script>
+
+</body>
+</html>
