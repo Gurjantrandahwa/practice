@@ -41,9 +41,9 @@ body {
 
 .button-wrapper button {
     background: transparent;
-    border: 1px solid lime;
+    border: 1px solid rgba(26, 52, 25, 0.88);
     padding: 8px 24px;
-    color: lime;
+    color: #061206;
     font-size: 18px;
     border-radius: 20px;
 }
