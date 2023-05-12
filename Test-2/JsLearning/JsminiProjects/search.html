@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+<p>The parra of the video </p>
+<p class="para">The parra of the content </p>
+<p class="para">The parra of the classes </p>
+
+<h1 id="heading">Change the heading with click </h1>
+<button onclick="changeContent()">Click me</button>
+
+<script>
+    const changeContent = () => {
+//  we can directly write
+//         document.getElementById('heading').innerHTML = "Something change"
+
+        // by taking reference, heading is the object here
+        //     const heading = document.getElementById('heading')
+        //     heading.innerHTML = "Welcome to the island"
+        // }
+
+        // with classes
+        // console.log(document.getElementsByClassName("para"))
+        // with tags
+        // console.log(document.getElementsByTagName('p'))
+// form data by Name
+//     document.getElementsByName('gender')
+
+        // same thing with query selectors
+//    querySelector only first
+
+
+        // document.querySelector("#heading").innerHTML = "chane text with query "
+        // document.querySelector(".para").innerHTML="change first"
+//    querySelectorAll for the all
+
+       // console.log(document.querySelectorAll(".para"))
+
+    }
+</script>
+</body>
+</html>
