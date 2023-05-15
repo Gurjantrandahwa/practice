@@ -60,11 +60,46 @@
 //     }
 //     findNemo(everyOne)
 
-//    Rule: 2 Remove constants
-//     function printFirstItemThenFirstHalfThenSayHi100Times(items) {
-//         console.log(items[0]);
-//         var middleIndex=Math.floor(items.length/2)
+   // Rule: 2 Remove constants
+   //  function printFirstItemThenFirstHalfThenSayHi100Times(items) {
+   //      console.log(items[0]);
+   //      let middleIndex=Math.floor(items.length/2)
+   //      let index=0
+   //      while (index<middleIndex){
+   //          console.log(items[index])
+   //          index++
+   //      }
+   //      for (let i = 0; i < 100; i++) {
+   //          console.log('hi')
+   //      }
+   //  }
+
+//    Rule: 3
+//     const boxes=['a','b','c','d','e']
+//     function logAllPairsOfArray(array) {
+//         for (let i = 0; i < array.length; i++) {
+//             for (let j = 0; j < array.length; j++) {
+//                 console.log(array[i],array[j])
+//             }
+//
+//         }
 //     }
+//     logAllPairsOfArray(boxes)
+//    Rule 4
+
+    function printAllNumbersThenAllPairsSums(numbers) {
+        console.log('These are the numbers')
+        numbers.forEach(function (num){
+            console.log(num)
+        })
+        console.log('and these are their sums')
+        numbers.forEach(function (first) {
+            numbers.forEach(function (second) {
+                console.log(first+second)
+            })
+        })
+    }
+    printAllNumbersThenAllPairsSums([1,2,3,4,5])
 </script>
 </body>
 </html>
