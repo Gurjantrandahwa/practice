@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+<script>
+
+    //How to create an object ?
+
+    //Ist Way-->
+//     let bioData={
+//         name:"John",
+//         age:25,
+//         getData: function () {
+//             console.log(`My name ${bioData.name} and my age ${bioData.age}`)
+//         }
+//     }
+// bioData.getData()
+
+//    Second way no need to write function as well after es6
+//         let bioData={
+//             name:"gurjant",
+//             age:25,
+//             getData () {
+//                 console.log(`My name ${bioData.name} and my age ${bioData.age}`)
+//             }
+//         }
+//     bioData.getData()
+
+//  what if we want object as a value inside an object
+
+        //     let bioData={
+        //         name:{
+        //             firstName:"gur",
+        //             lastName:"singh"
+        //         },
+        //         age:25,
+        //         getData () {
+        //             console.log(`   My name
+        //
+        //             ${bioData.name.firstName}
+        //             ${bioData.name.lastName}
+        //             and my age ${bioData.age}`)
+        //         }
+        //     }
+        // bioData.getData()
+
+//    this keywords example
+
+//    3rd one
+//     let names="vabhanv";
+//
+//     function myName() {
+//         console.log(this.names) // I think this keyword not work
+//         console.log(names) // this works
+//     }
+//     myName()
+
+//    ex-4
+//     const object =  {
+//       age:25,
+//         Name(){
+//           console.log(this.age)
+//         }
+//     }
+//     object.Name()
+
+//    ex-5
+//    question what will be output odj
+//         const object =  {
+//           age:25,
+//             Name:()=>{
+//               console.log(this.age)
+//             }
+//         }
+//         object.Name()
+
+
+//    ex-6 question what is the output of the this function
+
+    //     let bioData={
+    //         name:{
+    //             firstName:"gur",
+    //             lastName:"singh"
+    //         },
+    //         age:25,
+    //         getData () {
+    //             console.log(`My name ${this.name.firstName} and my age is ${this.age}`)
+    //         }
+    //     }
+    // bioData.getData()
+
+
+</script>
+
+
+</body>
+</html>
