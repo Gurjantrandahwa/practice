@@ -7,18 +7,103 @@
 <body>
 <script>
 
-const array1 = ['a','b','c','x']
-const array2 = ['z','y','i']
-// should return false
+    // const array1 = ['a', 'b', 'c', 'x']
+    // const array2 = ['z', 'y', 'i']
+    // should return false
 
-for (let i = 0; i <array1.length; i++) {
-    let bool=array1[i]!== array2[i]
+    // const array1 = ['a','b','c','x']
+    // const array2 = ['z','y','x']
+    // should return true
 
-}
+    // 2 parameters - arrays - no size limit
+    // ask the interview what those are
+    // return true or false
+    // function commonItem(arr1,arr2) {
+    //     for (let i = 0; i < arr1.length; i++) {
+    //         for (let j = 0; j < arr2.length; j++) {
+    //             if (arr1[i]===arr2[j]){
+    //                 return true
+    //             }
+    //         }
+    //     }
+    //     return false
+    // }
+    //
+    // console.log(commonItem(array1,array2))
+    // 0(a*b)
+    // 0(1) - space complexity
 
-// const array1 = ['a','b','c','x']
-// const array2 = ['z','y','x']
-// should return true
+    // const array1 = ['a', 'b', 'c', 'x']
+    // const array2 = ['z', 'y', 'a']
+    // better solution for the problem it could be time complexity or space
+    // array1==> object {
+    // a: true
+    // b: true
+    // c: true
+    // x:true}
+    // array2[index]===obj.properties
+
+    // function secondS(arr1, arr2) {
+        // loop through first array and create object when properties ===items in the array
+    // can we assume always 2 params?
+
+        // let map = {};
+        // for (let i = 0; i < arr1.length; i++) {
+        //     if (!map[arr1[i]]) {
+        //         const item = arr1[i];
+        //         map[item] = true
+        //     }
+        // }
+        // console.log(map)
+        //loop through second array and check if item in second array exists on created object
+    //     for (let j = 0; j < arr2.length; j++) {
+    //         if (map[arr2[j]]) {
+    //             return true
+    //         }
+    //     }
+    //     return false
+    // }
+    //
+    // console.log(secondS(array1, array2))
+
+    // In the second solution // Big O(a+b) this has better time complexity
+    // 0(a) space complexity
+    // but in first O(a*b)
+
+    // third way for the read ability sometimes readAbility
+    // function third(arr1,arr2) {
+    //     return arr1.some(item=>arr2.includes(item))
+    // }
+    // console.log(third(array1,array2))
+
+    // google interview solution they discuss
+
+    // Naive
+    // function hasPairWithSum(arr,sum) {
+    //     let len =arr.length;
+    //     for (let i = 0; i < len-1; i++) {
+    //         for (let j = i+1; j <len ; j++) {
+    //             if (arr[i]+arr[j]===sum){
+    //                 return true
+    //             }
+    //         }
+    //     }
+    //     return false;
+    // }
+    // better solution
+    // function hasPairWithSum2(arr,sum) {
+    //     const mySet =new Set();
+    //     const len =arr.length;
+    //     for (let i = 0; i < len; i++) {
+    //         if (mySet.has(arr[i])){
+    //             return true
+    //         }
+    //         mySet.add(sum-arr[i])
+    //     }
+    //     return false
+    // }
+    // console.log(hasPairWithSum([6,4,3,2,1,7],5))
+    // console.log(hasPairWithSum2([6,4,3,2,1,7],9))
 </script>
 </body>
 </html>
