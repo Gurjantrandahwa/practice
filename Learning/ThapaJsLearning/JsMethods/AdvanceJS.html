@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // call back and high order function building a calculator
+
+    // const add = (a, b) => {
+    //     return a + b
+    // }
+    // const subs = (a, b) => {
+    //     return a - b
+    // }
+    // const multi = (a, b) => {
+    //     return a * b
+    // }
+    // const calculator = (num1, num2, operator) => {
+    //     return operator(num1, num2)
+    // }
+    // console.log(calculator(5, 2, multi))
+
+    // Examples
+
+    // Hoisting in JS
+    // console.log(myName);
+    // var myName;
+    // myName = "John"
+
+    // How it will be in output during creation phase
+    // var myName;
+    // console.log(myName);
+    // myName = "John"
+
+    // Closures in JS
+    const outerFunction = (a) => {
+        let b = 10;
+        const innerFun = () => {
+            let sum = a + b;
+            console.log(`the sum of two ${sum}`)
+        }
+        innerFun()
+    }
+    outerFunction(5)
+    // it same like lexical scoping
+
+</script>
+</body>
+</html>
