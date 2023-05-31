@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // ** Objects
+    // reference type
+    //  let object1 = {value:10};
+    //  console.log(object1)
+    //
+    //  let object2 = object1
+    //
+    //  let object3 = {value:10};
+    //
+    //  console.log(object1===object2)
+    //  console.log(object3)
+    // console.log(object1===object3)
+    // Context vs scope
+
+    // ** Arrays
+
+    // const strings = ['a', 'b', 'c', 'd']
+    // 4*4= 16 bytes of storage
+    // methods of array
+    // push
+    // strings.push('e') // 0(1)
+    //pop
+    // strings.pop(); //0(1)
+    // strings.pop(); //0(1)
+
+    // add things on front use unshift
+    // with unshift change the indexes of all elements
+    // so that's why the Big 0(n)
+
+    // strings.unshift('x')
+
+    // add and delete thing in the middle use the splice method
+    // strings.splice(2,0,"alien") // 0(n)
+    //
+    // console.log(strings)
+
+    // Implementing An array
+    // class
+    // class MyArray {
+    //     constructor() {
+    //         this.length = 0;
+    //         this.data = {};
+    //     }
+    //
+    //     get(index) {
+    //         return this.data[index]
+    //     }
+    //
+    //     push(item) {
+    //         this.data[this.length] = item;
+    //         this.length++;
+    //         return this.length;
+    //     }
+    //
+    //     pop() {
+    //         const lastItem = this.data[this.length - 1]
+    //         delete this.data[this.length - 1];
+    //         this.length--;
+    //         return lastItem;
+    //     }
+    //
+    //     delete(index) {
+    //         const item = this.data[index];
+    //         this.shiftItems(index)
+    //
+    //     }
+    //
+    //     shiftItems(index) {
+    //         for (let i = index; i <this.length-1; i++)
+    //         {
+    //
+    //             this.data[i]=this.data[i+1];
+    //         }
+    //        delete this.data[this.length-1]
+    //     }
+    // }
+    //
+    // const newArray = new MyArray();
+    // newArray.push("hi")
+    // newArray.push("!")
+    // newArray.push("you")
+    // newArray.push("are")
+    // newArray.push("good")
+    // newArray.push("good")
+    // newArray.delete(1)
+    // console.log(newArray)
+    // newArray.pop()
+
+
+    // function based
+    //     function MyArray() {
+    //         const data = {};
+    //         let length = 0;
+    //
+    //         function get(index) {
+    //             return data[index];
+    //         }
+    //
+    //         function push(item) {
+    //             data[length] = item;
+    //             length++;
+    //             return length;
+    //         }
+    //
+    //         return {
+    //             get,
+    //             push,
+    //         };
+    //     }
+    //
+    //     const newArray = MyArray();
+    //     newArray.push("hi");
+    //     newArray.push("good");
+    //     console.log(newArray);
+
+    // Strings in arrays
+
+
+    // reverse array
+
+    let str = "hi my name is some"
+
+    function reverseString(str) {
+        // check input
+        if (!str || str.length < 2 || typeof str !== "string") {
+            return "That's not string"
+        }
+        const backward = [];
+        const totalItems = str.length - 1;
+        for (let i = totalItems; i >= 0; i--) {
+            backward.push(str[i])
+        }
+        // console.log(backward)
+        return backward.join('')
+
+    }
+
+    function reverseString2(str) {
+        return str.split('').reverse().join("")
+
+    }
+const reverseString3 = (str) => [...str].reverse().join('')
+
+    console.log(reverseString(str))
+    console.log(reverseString2(str))
+    console.log(reverseString3(str))
+</script>
+
+</body>
+</html>
