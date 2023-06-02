@@ -127,32 +127,95 @@
 
     // reverse array
 
-    let str = "hi my name is some"
+    // let str = "hi my name is some"
+    //
+    // function reverseString(str) {
+    //     // check input
+    //     if (!str || str.length < 2 || typeof str !== "string") {
+    //         return "That's not string"
+    //     }
+    //     const backward = [];
+    //     const totalItems = str.length - 1;
+    //     for (let i = totalItems; i >= 0; i--) {
+    //         backward.push(str[i])
+    //     }
+    // console.log(backward)
+    //     return backward.join('')
+    //
+    // }
 
-    function reverseString(str) {
-        // check input
-        if (!str || str.length < 2 || typeof str !== "string") {
-            return "That's not string"
-        }
-        const backward = [];
-        const totalItems = str.length - 1;
-        for (let i = totalItems; i >= 0; i--) {
-            backward.push(str[i])
-        }
-        // console.log(backward)
-        return backward.join('')
+    // function reverseString2(str) {
+    //     return str.split('').reverse().join("")
+    //
+    // }
+    // const reverseString3 = (str) => [...str].reverse().join('')
+    //
+    //     console.log(reverseString(str))
+    //     console.log(reverseString2(str))
+    //     console.log(reverseString3(str))
 
-    }
+    // second question merge two arrays and sort
 
-    function reverseString2(str) {
-        return str.split('').reverse().join("")
+    // function mergeSortedArrays(arr1, arr2) {
+    //     let merge = arr1.concat(arr2)
+    //     return merge.sort((a, b) => {
+    //         return a - b
+    //     })
+    // }
+    //
+    // console.log(mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]));
 
-    }
-const reverseString3 = (str) => [...str].reverse().join('')
+    //function from the udemy answer
+    //     function mergeSortedArrays(array1,array2) {
+    //         const mergeArray=[];
+    //         let array1Item =array1[0];
+    //         let array2Item =array2[0];
+    //         let i =1;
+    //         let j=1;
+    //         // check input
+    //         if (array1.length===0){
+    //             return array2;
+    //         }
+    //         if (array2.length===0){
+    //             return array1
+    //         }
+    //         while (array1Item|| array2Item){
+    //             console.log(array1Item,array2Item)
+    //             if (!array2Item || array1Item<array2Item){
+    //                 mergeArray.push(array1Item)
+    //                 array1Item=array1[i];
+    //                 i++;
+    //             }else {
+    //                 mergeArray.push(array2Item);
+    //                 array2Item=array2[j]
+    //                 j++;
+    //             }
+    //         }
+    //         return mergeArray;
+    //     }
+    // console.log(mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]))
 
-    console.log(reverseString(str))
-    console.log(reverseString2(str))
-    console.log(reverseString3(str))
+    // some problems on LeetCode
+    //https://coderbyte.com/editor/Longest%20Word:JavaScript
+    // function twoSum(nums, target) {
+    //
+    // }
+    //
+    // console.log(twoSum([2, 7, 11, 15], 9))
+
+
+    // ** Hash tables or Hash maps
+    // in JS hash are technically objects
+
+    // let user={
+    //     age:25,
+    //     name:"Gurj",
+    //     magic:true,
+    //     scream:function () {
+    //         console.log("please do that")
+    //     }
+    // }
+    // console.log(user.name) // 0(1)
 </script>
 
 </body>
