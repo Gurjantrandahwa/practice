@@ -47,6 +47,57 @@
     // outerFunction(5)
     // it same like lexical scoping
 
+
+    // one more example of Closures
+
+    // const outerFunction = (a) => {
+    //     let b = 10;
+    //     const innerFun = () => {
+    //         let sum = a + b;
+    //         console.log(`the sum of two ${sum}`)
+    //     }
+    //   return innerFun;
+    // }
+    // let check=outerFunction(5)
+    // console.dir(check)
+
+    // Synchronous JS Prog
+    // const fun2 = () => {
+    //     console.log("function 2 is called")
+    // }
+    // const fun1 = () => {
+    //     console.log("function 1 is called")
+    //     fun2();
+    //     console.log("fun 1 is called again")
+    // }
+    // fun1()
+
+    // Asynchronous JS Prog
+    // const fun2 = () => {
+    //     setTimeout(()=>{
+    //         console.log("function 2 is called")
+    //     },2000)
+    //
+    // }
+    // const fun1 = () => {
+    //     console.log("function 1 is called")
+    //     fun2();
+    //     console.log("fun 1 is called again")
+    // }
+    // fun1()
+
+    // Currying technique
+
+// function sum(num1) {
+//     // console.log(num1)
+//    return  function (num2) {
+//         return function (num3) {
+//             console.log(num1+num2+num3)
+//
+//         }
+//     }
+// }
+// sum(5)(3)(8)
 </script>
 </body>
 </html>

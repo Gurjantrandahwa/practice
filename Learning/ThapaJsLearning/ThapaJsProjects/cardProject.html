@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+    <style>
+        body {
+            background: black;
+            color: ghostwhite;
+            font-family: Arial, "sans-serif";
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        #container {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<!--Using AJAX and XMLHttpRequest in this project-->
+<!--API-->
+<h1>Country Card </h1>
+<div id="container">
+
+
+</div>
+
+<script>
+    const container = document.querySelector('#container')
+
+    const request = new XMLHttpRequest();
+
+    request.open('GET', "https://restcountries.com/v3.1/name/india");
+    request.send();
+    // to get the response
+
+    request.addEventListener('load', function () {
+        // console.log(this.responseText)
+        const [data] = JSON.parse(this.responseText)
+        console.log(data.name)
+        const htmlData = `<h2>${data.name.common}</h2>
+<img src="${data.flags.svg}" alt="" width="100px">
+`;
+
+
+        container.insertAdjacentHTML("afterbegin", htmlData)
+    })
+
+</script>
+</body>
+</html>
