@@ -207,15 +207,47 @@
     // ** Hash tables or Hash maps
     // in JS hash are technically objects
 
-    // let user={
-    //     age:25,
-    //     name:"Gurj",
-    //     magic:true,
-    //     scream:function () {
-    //         console.log("please do that")
+    let user={
+        age:25,
+        name:"Gurjap",
+        magic:true,
+        scream:function () {
+            console.log("please do thaty")
+        }
+    }
+    // implement the hash table
+
+    // function createHashTable(size) {
+    //     const data = new Array(size);
+    //
+    //     function hash(key) {
+    //         let hash = 0;
+    //         for (let i = 0; i < key.length; i++) {
+    //             hash = (hash + key.charCodeAt(i) * i) % data.length;
+    //         }
+    //         return hash;
     //     }
+    //
+    //     function get(key) {
+    //         const hashedIndex = hash(key);
+    //         return data[hashedIndex] ? data[hashedIndex][1] : undefined;
+    //     }
+    //
+    //     function set(key, value) {
+    //         const hashedIndex = hash(key);
+    //         data[hashedIndex] = [key, value];
+    //         return data.length;
+    //     }
+    //
+    //     return { get, set };
     // }
-    // console.log(user.name) // 0(1)
+    //
+    // // Usage example:
+    // const hashTable = createHashTable(50);
+    //
+    // hashTable.set("key1", "value1");
+    // console.log(hashTable.get("key1")); // Output: value1
+
 </script>
 
 </body>
