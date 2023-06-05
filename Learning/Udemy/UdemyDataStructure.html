@@ -207,16 +207,17 @@
     // ** Hash tables or Hash maps
     // in JS hash are technically objects
 
-    let user={
-        age:25,
-        name:"Gurjap",
-        magic:true,
-        scream:function () {
-            console.log("please do thaty")
-        }
-    }
-    // implement the hash table
-
+    // let user = {
+    //     age: 25,
+    //     name: "Gurjap",
+    //     magic: true,
+    //     scream: function () {
+    //         console.log("please do thaty")
+    //     }
+    // }
+    //
+    // // implement the hash table
+    //
     // function createHashTable(size) {
     //     const data = new Array(size);
     //
@@ -224,30 +225,142 @@
     //         let hash = 0;
     //         for (let i = 0; i < key.length; i++) {
     //             hash = (hash + key.charCodeAt(i) * i) % data.length;
+    //             // console.log(hash,"hash")
     //         }
     //         return hash;
     //     }
     //
-    //     function get(key) {
-    //         const hashedIndex = hash(key);
-    //         return data[hashedIndex] ? data[hashedIndex][1] : undefined;
-    //     }
     //
     //     function set(key, value) {
-    //         const hashedIndex = hash(key);
-    //         data[hashedIndex] = [key, value];
-    //         return data.length;
+    //         const address = hash(key);
+    //         // data[address] = [key, value];
+    //         // return data.length;
+    //         if (!data[address]) {
+    //             data[address] = [];
+    //             // console.log(data)
+    //         }
+    //         data[address].push([key, value])
+    //         return data //0(1)
     //     }
     //
-    //     return { get, set };
+    //     function get(key) {
+    //         const address = hash(key);
+    //         // return data[hashedIndex] ? data[hashedIndex][1] : undefined;
+    //         const currentBucket = data[address];
+    //         // console.log(currentBucket)
+    //         if (currentBucket) {
+    //             for (let i = 0; i < currentBucket.length; i++) {
+    //                 if (currentBucket[i][0] === key) {
+    //                     return currentBucket[i][1]
+    //                 }
+    //             }
+    //         } //0(1)
+    //         return undefined
+    //     }
+    // decided to enhance the previous
+    // keys() {
+    //         if (!this.data.length) {
+    //             return undefined
+    //         }
+    //         let result = []
+    //         // loop through all the elements
+    //         for (let i = 0; i < this.data.length; i++) {
+    //             // if it's not an empty memory cell
+    //             if (this.data[i] && this.data[i].length) {
+    //                 // but also loop through all the potential collisions
+    //                 if (this.data.length > 1) {
+    //                     for (let j = 0; j < this.data[i].length; j++) {
+    //                         result.push(this.data[i][j][0])
+    //                     }
+    //                 } else {
+    //                     result.push(this.data[i][0])
+    //                 }
+    //             }
+    //         }
+    //         return result;
+    //     }
+
+    //     function keys() {
+    //         const keysArray = [];
+    //         for (let i = 0; i < data.length; i++) {
+    //             if (data[i]){
+    //                 console.log(data[i])
+    //                 keysArray.push(data[i][0][1])
+    //             }
+    //
+    //         }
+    //         return keysArray
+    //     }
+    //
+    //     return {set, get, keys};
     // }
     //
     // // Usage example:
-    // const hashTable = createHashTable(50);
     //
-    // hashTable.set("key1", "value1");
-    // console.log(hashTable.get("key1")); // Output: value1
+    // const hashTable = createHashTable(50);
+    // console.log(hashTable.set("grapes", 10000));
+    // console.log(hashTable.set("apples", 54));
+    // console.log(hashTable.set("oranges", 2));
+    // console.log(hashTable.get("apples"))
+    // console.log(hashTable.keys())
 
+    // Exercise google question
+    // given ab array =[2,5,1,2,3,5,1,2,4]
+    //In this return the value which is repeated first like in 2 is repeated first it should return 2
+    //
+    // let array = [2, 5, 1, 2, 3, 5, 1, 2, 4]// It return 2
+    // let array2 = [2, 1, 1, 2, 3, 5, 1, 2, 4]//  It should return 1
+    // let array3 = [2, 3, 4, 5]// It should return undefined
+    // solution with arrays
+
+    // function repeated(input) {
+    //     for (let i = 0; i < input.length; i++) {
+    //         for (let j = 0; j < i; j++) {
+    //             if (input[i] === input[j]) {
+    //                 return input[i]
+    //             }
+    //         }
+    //     }
+    //     return undefined; //0(n^2)
+
+        // const seen = []; // Array to store seen values
+        // for (let i = 0; i < input.length; i++) {
+        //     if (seen.includes(input[i])) {
+        //         return input[i]; // Return the first repeated value
+        //     }
+        //     seen.push(input[i]); // Add the value to the seen array
+        // }
+        // return undefined; //
+    // }
+
+    // solution with hash tables
+
+    // function repeated(input) {
+    //     let hashMap = {};
+    //     for (let i = 0; i < input.length; i++) {
+    //         if (hashMap[input[i]] !== undefined) {
+    //             return input[i]
+    //         } else {
+    //             hashMap[input[i]] = i
+    //         }
+    //         console.log(hashMap)
+    //     }
+    //     return undefined //0(n)
+    // }
+    //
+    //  console.log(repeated(array))
+
+
+// **** Linked list DS
+
+    const basket =['apples','grapes','pears']
+
+    // linked list diagram:
+
+    // apples
+    // 8947-->grapes
+               // 8742-->pears
+                          //372-->null
 </script>
 
 </body>
