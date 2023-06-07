@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #f4f7f8;
+    font-family: Arial, "sans-serif";
+
+}
+
+
+.heading {
+    background-color: gold;
+    padding: 10px 30px;
+}
+
+.container-note {
+    padding: 50px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.add{
+    background: gold;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 600;
+
+
+}
