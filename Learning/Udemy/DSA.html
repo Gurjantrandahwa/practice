@@ -45,47 +45,47 @@
     // }
     // funChallenge()
 
-// If condition is matched the we can use the break;
-// worst case: if the nemo is on the last
-//     const everyOne = ['dory', 'bruce', 'gill', 'nemo', 'gilly', 'billy', 'willey'];
-//     function findNemo(array) {
-//
-//         for (let i = 0; i < array.length; i++) {
-//             console.log("running")
-//             if (array[i] === 'nemo') {
-//                 console.log("Found Nemo!")
-//                 break;
-//             }
-//         }
-//     }
-//     findNemo(everyOne)
+    // If condition is matched the we can use the break;
+    // worst case: if the nemo is on the last
+    //     const everyOne = ['dory', 'bruce', 'gill', 'nemo', 'gilly', 'billy', 'willey'];
+    //     function findNemo(array) {
+    //
+    //         for (let i = 0; i < array.length; i++) {
+    //             console.log("running")
+    //             if (array[i] === 'nemo') {
+    //                 console.log("Found Nemo!")
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     findNemo(everyOne)
 
-   // Rule: 2 Remove constants
-   //  function printFirstItemThenFirstHalfThenSayHi100Times(items) {
-   //      console.log(items[0]);
-   //      let middleIndex=Math.floor(items.length/2)
-   //      let index=0
-   //      while (index<middleIndex){
-   //          console.log(items[index])
-   //          index++
-   //      }
-   //      for (let i = 0; i < 100; i++) {
-   //          console.log('hi')
-   //      }
-   //  }
+    // Rule: 2 Remove constants
+    //  function printFirstItemThenFirstHalfThenSayHi100Times(items) {
+    //      console.log(items[0]);
+    //      let middleIndex=Math.floor(items.length/2)
+    //      let index=0
+    //      while (index<middleIndex){
+    //          console.log(items[index])
+    //          index++
+    //      }
+    //      for (let i = 0; i < 100; i++) {
+    //          console.log('hi')
+    //      }
+    //  }
 
-//    Rule: 3
-//     const boxes=['a','b','c','d','e']
-//     function logAllPairsOfArray(array) {
-//         for (let i = 0; i < array.length; i++) {
-//             for (let j = 0; j < array.length; j++) {
-//                 console.log(array[i],array[j])
-//             }
-//
-//         }
-//     }
-//     logAllPairsOfArray(boxes)
-//    Rule 4
+    //    Rule: 3
+    //     const boxes=['a','b','c','d','e']
+    //     function logAllPairsOfArray(array) {
+    //         for (let i = 0; i < array.length; i++) {
+    //             for (let j = 0; j < array.length; j++) {
+    //                 console.log(array[i],array[j])
+    //             }
+    //
+    //         }
+    //     }
+    //     logAllPairsOfArray(boxes)
+    //    Rule 4
 
     // function printAllNumbersThenAllPairsSums(numbers) {
     //     console.log('These are the numbers')
@@ -101,17 +101,17 @@
     // }
     // printAllNumbersThenAllPairsSums([1,2,3,4,5])
 
-//    Space
+    //    Space
 
-//     function space(n) {
-//         for (let i = 0; i < n.length; i++) {
-//             console.log("space...")
-//         }
-//     }
-//     space([1,2,3,4,5]) //0(1)
+    //     function space(n) {
+    //         for (let i = 0; i < n.length; i++) {
+    //             console.log("space...")
+    //         }
+    //     }
+    //     space([1,2,3,4,5]) //0(1)
 
 
-//     function arrayOfN(n) {
+    //     function arrayOfN(n) {
     //         let hiArray=[];
     //         for (let i = 0; i < n; i++) {
     //             hiArray[i]="h1"
@@ -120,38 +120,201 @@
     //     }
     // console.log(arrayOfN(500))
 
-//    Fun exercise working at twitter
-//
-// //    Find Ist, find Nth..
-// //     const array=['hi','my','teddy']
-//     // first and last
-//    // console.log(array[0]) ; // 0(1)
-//    // console.log(array.length-1)  // 0(1)
-//
-// //     if you find the date
-// const array=[
-//     {
-//         tweet:"Hi",
-//         date:2021
-//     },
-//     {
-//         tweet:"buddy",
-//         date:2022
-//     },
-//     {
-//         tweet:"oldest one",
-//         date:1982
-//     },
-// ]
-//    0(n^2)
+    //    Fun exercise working at twitter
+    //
+    // //    Find Ist, find Nth..
+    // //     const array=['hi','my','teddy']
+    //     // first and last
+    //    // console.log(array[0]) ; // 0(1)
+    //    // console.log(array.length-1)  // 0(1)
+    //
+    // //     if you find the date
+    // const array=[
+    //     {
+    //         tweet:"Hi",
+    //         date:2021
+    //     },
+    //     {
+    //         tweet:"buddy",
+    //         date:2022
+    //     },
+    //     {
+    //         tweet:"oldest one",
+    //         date:1982
+    //     },
+    // ]
+    //    0(n^2)
 
-//    If we we string what is the length of in JS
-//    what is the Big(0) notation for this
-//    answer of the Big(0) depends on the language
+    //    If we we string what is the length of in JS
+    //    what is the Big(0) notation for this
+    //    answer of the Big(0) depends on the language
 
-//    answer is 0(1)
-// let string ="dsfjhsdjhfgjhsdgfhjsd".length
-//     console.log(string)
+    //    answer is 0(1)
+    // let string ="string".length
+    //     console.log(string)
+
+    // Trees
+
+    //  Binary Search trees
+
+    // class based
+    // class Node {
+    //     constructor(value) {
+    //         this.left = null;
+    //         this.right = null;
+    //         this.value = value;
+    //     }
+    // }
+    //
+    // class BinarySearchTree  {
+    //     constructor() {
+    //         this.root = null;
+    //     }
+    //
+    //     insert(value) {
+    //         const newNode = new Node(value)
+    //         if (this.root === null) {
+    //             this.root = newNode;
+    //         } else {
+    //             let currentNode = this.root;
+    //             while (true) {
+    //                 if (value < currentNode.value) {
+    //                     // left
+    //                     if (!currentNode.left) {
+    //                         currentNode.left = newNode;
+    //                         return this
+    //                     }
+    //                     currentNode = currentNode.left
+    //                 } else {
+    //                     // right
+    //                     if (!currentNode.right) {
+    //                         currentNode.right = newNode;
+    //                         return this;
+    //                     }
+    //                     currentNode = currentNode.right;
+    //                 }
+    //             }
+    //
+    //         }
+    //     }
+    //
+    //     lookup(value) {
+    //         if (!this.root) {
+    //             return false
+    //         }
+    //         let currentNode = this.root
+    //         while (currentNode) {
+    //             if (value < currentNode.value) {
+    //                 currentNode = currentNode.left
+    //             } else if (value > currentNode.value) {
+    //                 currentNode = currentNode.right
+    //             }else if(currentNode.value===value){
+    //                 return currentNode
+    //             }
+    //         }
+    //         return false
+    //     }
+    //     remove(value) {
+    //         if (!this.root) {
+    //             return false;
+    //         }
+    //         let currentNode = this.root;
+    //         let parentNode = null;
+    //         while(currentNode){
+    //             if(value < currentNode.value){
+    //                 parentNode = currentNode;
+    //                 currentNode = currentNode.left;
+    //             } else if(value > currentNode.value){
+    //                 parentNode = currentNode;
+    //                 currentNode = currentNode.right;
+    //             } else if (currentNode.value === value) {
+    //                 //We have a match, get to work!
+    //
+    //                 //Option 1: No right child:
+    //                 if (currentNode.right === null) {
+    //                     if (parentNode === null) {
+    //                         this.root = currentNode.left;
+    //                     } else {
+    //
+    //                         //if parent > current value, make current left child a child of parent
+    //                         if(currentNode.value < parentNode.value) {
+    //                             parentNode.left = currentNode.left;
+    //
+    //                             //if parent < current value, make left child a right child of parent
+    //                         } else if(currentNode.value > parentNode.value) {
+    //                             parentNode.right = currentNode.left;
+    //                         }
+    //                     }
+    //
+    //                     //Option 2: Right child which doesnt have a left child
+    //                 } else if (currentNode.right.left === null) {
+    //                     currentNode.right.left = currentNode.left;
+    //                     if(parentNode === null) {
+    //                         this.root = currentNode.right;
+    //                     } else {
+    //
+    //                         //if parent > current, make right child of the left the parent
+    //                         if(currentNode.value < parentNode.value) {
+    //                             parentNode.left = currentNode.right;
+    //
+    //                             //if parent < current, make right child a right child of the parent
+    //                         } else if (currentNode.value > parentNode.value) {
+    //                             parentNode.right = currentNode.right;
+    //                         }
+    //                     }
+    //
+    //                     //Option 3: Right child that has a left child
+    //                 } else {
+    //
+    //                     //find the Right child's left most child
+    //                     let leftmost = currentNode.right.left;
+    //                     let leftmostParent = currentNode.right;
+    //                     while(leftmost.left !== null) {
+    //                         leftmostParent = leftmost;
+    //                         leftmost = leftmost.left;
+    //                     }
+    //
+    //                     //Parent's left subtree is now left most's right subtree
+    //                     leftmostParent.left = leftmost.right;
+    //                     leftmost.left = currentNode.left;
+    //                     leftmost.right = currentNode.right;
+    //
+    //                     if(parentNode === null) {
+    //                         this.root = leftmost;
+    //                     } else {
+    //                         if(currentNode.value < parentNode.value) {
+    //                             parentNode.left = leftmost;
+    //                         } else if(currentNode.value > parentNode.value) {
+    //                             parentNode.right = leftmost;
+    //                         }
+    //                     }
+    //                 }
+    //                 return true;
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // const tree = new BinarySearchTree();
+    // tree.insert(9)
+    // tree.insert(4)
+    // tree.insert(6)
+    // tree.insert(20)
+    // tree.insert(170)
+    // tree.insert(15)
+    // tree.insert(1)
+    // tree.remove(1)
+    // console.log(tree.remove(19))
+    //  console.log(JSON.stringify(traverse(tree.root)))
+    //
+    //
+    // function traverse(node) {
+    //     const tree = {value: node.value};
+    //     tree.left = node.left === null ? null : traverse(node.left);
+    //     tree.right = node.right === null ? null : traverse(node.right)
+    //     return tree
+    //
+    // }
 </script>
 </body>
 </html>
