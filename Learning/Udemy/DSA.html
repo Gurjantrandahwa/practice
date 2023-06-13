@@ -393,14 +393,14 @@
 
     // factorial
 
-//     function findFactorialRecursive(number) {
+    //     function findFactorialRecursive(number) {
     // if (number===2){
     //     return 2
     // }
     // return number * findFactorialRecursive(4)
     //     }
     // console.log(findFactorialRecursive(5))
-//     function findFactorialIterative(number) {
+    //     function findFactorialIterative(number) {
     //         let answer = 1;
     //         if (number===2){
     //             answer = 2;
@@ -414,6 +414,124 @@
 
 
     //  fibonacci
+    // Given a number N return the index value of the Fibonacci sequence, where sequence is:
+
+    // 0,1,1,2,3,5,8,13,21,34,55,89,144...
+    // the pattern of the sequence is that each value is the sum of the 2 previous values. that
+    // means that for N=5 -> 2+3
+
+    // function fibonacciIterative(n) { // 0(n)
+    //     let arr = [0, 1];
+    //     for (let i = 2; i < n + 1; i++) {
+    //         arr.push(arr[i - 2] + arr[i - 1])
+    //     }
+    //     return arr[n]
+    // }
+    //
+    // console.log(fibonacciIterative(52))
+    //
+    // function fibonacciRecursive(n) {//0(2^n) vey bad Big )
+    //     if (n < 2) {
+    //         return n;
+    //     }
+    //     return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2)
+    // }
+    //
+    // console.log(fibonacciRecursive(5))
+
+    //Implement a function that reverses a string using iteration...and then recursion!
+    // function reverseString(str) {
+    //
+    //     return str.split("").reverse().join("")
+    //
+    // }
+    //
+    // console.log(reverseString('yoyo mastery'))
+    // //should return: 'yretsam oyoy'
+    //
+    // function reverseStringRecursive(str) {
+    //     if (str === "") {
+    //         return "";
+    //     } else {
+    //         return reverseStringRecursive(str.substr(1)) + str.charAt(0);
+    //     }
+    // }
+    // reverseStringRecursive('yoyo master');
+
+
+    // ****** Sorting*****
+
+    // Bubble Sort
+
+    //     const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
+    //
+    //     function bubbleSort(arr) {
+    //         for (let i = 0; i < arr.length; i++) {
+    //             for (let j = 0; j < arr.length; j++) {
+    //
+    //                     if (arr[j] > arr[j+1]){
+    //                         // swap numbers
+    //                         let temp = arr[j];
+    //                         arr[j]= arr[j+1];
+    //                         arr[j+1]=temp
+    //                     }
+    //
+    //             }
+    //         }
+    //     }
+    // bubbleSort(numbers)
+    // console.log(numbers)
+
+    // Selection sort
+
+    // const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
+    //
+    // function selectionSort(array) {
+    //     const length = array.length;
+    //
+    //     for (let i = 0; i < length; i++) {
+    //      // set current index as minimum
+    //         let min = i;
+    //         let temp = array[i];
+    //         for (let j = i + 1; j < length; j++) {
+    //             if (array[j] < array[min]) {
+    //                 min = j
+    //             }
+    //         }
+    //         array[i] = array[min]
+    //         array[min] = temp
+    //     }
+    //     return array
+    // }
+    //
+    // selectionSort(numbers)
+    // console.log(numbers)
+
+
+    // Insertion sort
+
+    // const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
+    //
+    // function InsertionSort(array) {
+    //     const length = array.length;
+    //     for (let i = 0; i < length; i++) {
+    //         if (array[i] < array[0]) {
+    //             // move number to the first position
+    //             array.unshift(array.splice(i, 1)[0]);
+    //         } else {
+    //             // find where number should go
+    //             for (let j = 0; j < i; j++) {
+    //                 if (array[i] > array[j - 1] && array[i] < array[j]) {
+    //                     // move number to the right spot
+    //                     array.splice(j, 0, array.splice(i, 1)[0]);
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // InsertionSort(numbers)
+    // console.log(numbers)
 
 </script>
 </body>
