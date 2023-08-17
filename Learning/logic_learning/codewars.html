@@ -457,7 +457,70 @@
     //
     // console.log(shortcut("HeLLO"))
 
+    // let langs = {
+    //     english: 'Welcome',
+    //     czech: 'Vitejte',
+    //     danish: 'Velkomst',
+    //     dutch: 'Welkom',
+    //     estonian: 'Tere tulemast',
+    //     finnish: 'Tervetuloa',
+    //     flemish: 'Welgekomen',
+    //     french: 'Bienvenue',
+    //     german: 'Willkommen',
+    //     irish: 'Failte',
+    //     italian: 'Benvenuto',
+    //     latvian: 'Gaidits',
+    //     lithuanian: 'Laukiamas',
+    //     polish: 'Witamy',
+    //     spanish: 'Bienvenido',
+    //     swedish: 'Valkommen',
+    //     welsh: 'Croeso'
+    // }
+    //
+    // function greet(language) {
+    //     return langs[language]||langs['english'];
+    // }
+    //
+    // console.log(greet('italian'))
 
+    // function peopleWithAgeDrink(old) {
+    //     switch (true) {
+    //         case old < 14:
+    //             return "drink toddy";
+    //         case old >= 14 && old < 18:
+    //             return "drink coke";
+    //         case old >= 18 && old < 21:
+    //             return "drink beer";
+    //         case old >= 21:
+    //             return "drink whisky";
+    //         default:
+    //             return "";
+    //     }
+    // }
+    //
+    // console.log(peopleWithAgeDrink(14))
+
+
+    function getDrinkByProfession(param) {
+        param =param.toLowerCase();
+
+        switch (param) {
+            case "Jabroni":
+                return "Patron Tequila";
+            case "School Counselor":
+                return "Anything with Alcohol"
+            case "Programmer":
+                return "Hipster Craft Beer"
+            case "Bike Gang Member":
+                return "Moonshine"
+            case "Politician":
+                return "Your tax dollars"
+            case "Rapper":
+                return "Cristal"
+            default:
+                return 	"Beer";
+        }
+    }
 </script>
 <body>
 
