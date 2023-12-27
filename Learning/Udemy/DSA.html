@@ -5,6 +5,57 @@
     <title>DSA</title>
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi-Circle Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            background-color: #3498db;
+            border-radius: 15px; /* Adjust as needed */
+            overflow: hidden;
+        }
+
+        .semi-circle-left,
+        .semi-circle-right {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #2c3e50;
+            border-radius: 50%;
+        }
+
+        .semi-circle-left {
+            left: -25%;
+        }
+
+        .semi-circle-right {
+            right: -25%;
+        }
+
+        .content {
+            padding: 20px;
+            color: #ecf0f1;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+</html>
 <script>
     // const nemo = ['dory', 'bruce', 'gill', 'nemo', 'gilly', 'billy', 'willey'];
     // const large = new Array(10000).fill('nemo')
