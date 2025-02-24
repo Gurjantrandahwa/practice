@@ -7,39 +7,39 @@
 <body>
 
 <script>
-    function fibonacci(n) {
-        if (n <= 1) {
-            return n;
-        }
-
-        let a = 0, b = 1, temp;
-        console.log(0+1);
-        console.log(1+1);
-        console.log(1+2);
-        console.log(2+3);
-        console.log(3+5);
-
-
-        // for (let i = 2; i <= n; i++) {
-        //     temp = a + b;
-        //     a = b;
-        //     b = temp;
-        //
-        // }
-        // return b;
-    }
-    function fibonacciRecursiveWithLogs(n, a = 0, b = 1, step = 1) {
-        console.log(`Step ${step}: a = ${a}, b = ${b}`);
-
-        if (n === 0) return a;
-        if (n === 1) return b;
-
-        return fibonacciRecursiveWithLogs(n - 1, b, a + b, step + 1);
-    }
-
-    console.log(fibonacciRecursiveWithLogs(10));  // Output: 55
-
-    console.log(fibonacci(10))
+    // function fibonacci(n) {
+    //     if (n <= 1) {
+    //         return n;
+    //     }
+    //
+    //     let a = 0, b = 1, temp;
+    //     console.log(0+1);
+    //     console.log(1+1);
+    //     console.log(1+2);
+    //     console.log(2+3);
+    //     console.log(3+5);
+    //
+    //
+    //     // for (let i = 2; i <= n; i++) {
+    //     //     temp = a + b;
+    //     //     a = b;
+    //     //     b = temp;
+    //     //
+    //     // }
+    //     // return b;
+    // }
+    // function fibonacciRecursiveWithLogs(n, a = 0, b = 1, step = 1) {
+    //     console.log(`Step ${step}: a = ${a}, b = ${b}`);
+    //
+    //     if (n === 0) return a;
+    //     if (n === 1) return b;
+    //
+    //     return fibonacciRecursiveWithLogs(n - 1, b, a + b, step + 1);
+    // }
+    //
+    // console.log(fibonacciRecursiveWithLogs(10));  // Output: 55
+    //
+    // console.log(fibonacci(10))
 </script>
 </body>
 </html>
